@@ -1,9 +1,13 @@
 const express = require('express')
 const birdRouter = require('./routes/birdrouter')
 const userRouter = require('./routes/useritem')
+// 
+const dotenv=require("dotenv")
+const formidable = require('formidable')
 
 const app = express()
 const port = 3000
+console.log(process.env)
 
 app.use(express.static("public"))
 // framework
