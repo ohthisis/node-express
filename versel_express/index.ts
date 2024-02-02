@@ -5,6 +5,7 @@ const app=express()
 const port=3000
 
 const apiurl=process.env.API_URL;
+console.log(apiurl);
 app.use(express.static('public'))
 
 const html=`
